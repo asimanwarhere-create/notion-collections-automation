@@ -35,7 +35,7 @@ NOTION_VERSION = "2022-06-28"
 # --- Fixed IDs (not secret) ---------------------------------------------------
 COLLECTIONS_DB_ID = "303f675f-38fb-80c0-9eab-ef5f51354d63"   # source: Collections
 SUMMARY_DB_ID = "47ea2af1-a825-4302-b2bc-c7ca189d92db"       # target: Pipeline Summary
-WEEKLY_DB_ID = "7b9e7c88-7852-4239-827c-da91cd20dee7"        # target: Weekly Output by Person
+WEEKLY_DB_ID = "7b9e7c88-785a-4239-827c-da91cd20dee7"        # target: Weekly Output by Person
 EXEC_PAGE_ID = "3a3f675f-38fb-81a2-a736-ec260be0a3b8"        # target: Executive Overview page
 
 # Property that the script writes the computed launch status into (a real select
