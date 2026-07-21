@@ -2,7 +2,7 @@ name: Collections Pipeline Summary
 
 on:
   schedule:
-    - cron: "*/15 * * * *"   # every 15 minutes (UTC)
+    - cron: "7,22,37,52 * * * *"   # every 15 min, offset off the busy top-of-hour
   workflow_dispatch:          # allow manual "Run workflow" from the Actions tab
 
 jobs:
