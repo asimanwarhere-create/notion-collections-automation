@@ -165,7 +165,7 @@ def compute_counts(rows):
             awaiting_creative += 1                       # listers ahead; waiting on creatives
         if creative in {"In progress", "Done"} and listing in {"Not started", ""}:
             creative_ahead += 1                          # creatives ahead of listers
-        if l_done and c_done and launch not in {"Done", "Blocked"}:
+        if l_done and c_done and launch not in {"Done", "Blocked", "Not Needed"}:
             ready_not_launched += 1                      # both prep stages done, not shipped
         if launch == "Blocked":
             blocked += 1
