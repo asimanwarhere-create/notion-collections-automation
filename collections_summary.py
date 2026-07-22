@@ -272,7 +272,7 @@ def compute_weekly(rows, start, end):
             for pid in people_ids(r, "Listing Owner"):
                 tally.setdefault(pid, {"Listings": 0, "Creatives": 0})["Listings"] += 1
         # Creatives: Creative Ready Date in window (credited to Creative Tasks Owner).
-        if in_window(date_start(r, "Creative Ready Date"), start, end):
+        if status_name(r, "Creative Tasks Status") == "Done" and in_window(date_start(r, "Creative Ready Date"), start, end):
             for pid in people_ids(r, "Creative Tasks Owner"):
                 tally.setdefault(pid, {"Listings": 0, "Creatives": 0})["Creatives"] += 1
     return tally
